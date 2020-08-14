@@ -1,0 +1,2 @@
+RunID,Data_Source_Name,Application_Name,Table_Name,Attribute_Name,inComingRule,Primary_key_val,ErrVal,ErrCd,Action,ErrMsg,Run_Timestamp
+local-1597384766349,MS1,AIT1,AIT_Table_1,AppFullName,DQ6,78,null,ER6,warning,Acloumn has null Value,2020-08-14 11:29:38

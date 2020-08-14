@@ -1,3 +1,0 @@
-RunID,Data_Source_Name,Application_Name,Table_Name,Attribute_Name,inComingRule,Primary_key_val,ErrVal,ErrCd,Action,ErrMsg,Run_Timestamp
-local-1597381105793,MS1,AIT1,AIT_Table_1,AppID,DQ6,2,null,ER6,Reject,Acloumn has null Value,2020-08-14 10:28:38
-local-1597381105793,MS1,AIT1,AIT_Table_1,AppID,DQ6,4,null,ER6,Reject,Acloumn has null Value,2020-08-14 10:28:38
