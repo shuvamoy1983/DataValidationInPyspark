@@ -11,13 +11,8 @@ if __name__ == '__main__':
     spark = ConnctSession.session()
 
     status=execute(spark,datafile,table_metadata,rule)
-    print(status)
-
-    if(status):
-        df = spark.read.option("header", "true").csv("test.csv/*.csv")
-        df.orderBy(col("Primary_key_val").cast(IntegerType()), ascending=True).repartition(1).write.save(path='final3.csv',
-                                                                                                     header=True,
-                                                                                                     format='csv',
-                                                                                                     sep=',')
+    df = spark.read.format("csv").option("header", "true").load("test/*")
+    df.orderBy(col("Primary_key_val").cast(IntegerType()), ascending=True)\
+        .repartition(1).write.save(path='final4.csv',header=True,format='csv',sep=',')
 
 

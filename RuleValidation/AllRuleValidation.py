@@ -12,7 +12,8 @@ from RuleValidation import ErrorFileMessage
 
 class AttributeValidate:
 
-    def chkNull(attribute, data, metadaDF, inComingRule):
+    def chkNull(attribute, data, metadaDF, inComingRule,n):
+        path='test/'+str(n)
         metadata = metadaDF.where(col("Attribute_Name") == attribute)
         dp = data.where(col(attribute).isNull()).select(col(attribute), col("ID"))
         validation = dp.crossJoin(metadata)
@@ -28,7 +29,7 @@ class AttributeValidate:
             rslt.select(col("RunID"),col("Data_Source_Name"),col("Application_Name"),
                         col("Table_Name"),col("Attribute_Name"),col("inComingRule"),col("ID").alias("Primary_key_val"),
                         col("ErrVal"),col("ErrCd"),col("Action"),col("ErrMsg"),col("timeStamp").alias("Run_Timestamp")) \
-                 .write.save(path='test.csv', header=True,format='csv', mode='append', sep=',')
+                 .write.save(path=path, header=True,format='csv', mode='append', sep=',')
         else:
             action = 'warning'
             ErrCd = 'ER6'
@@ -40,7 +41,7 @@ class AttributeValidate:
             rslt.select(col("RunID"), col("Data_Source_Name"), col("Application_Name"),
                    col("Table_Name"), col("Attribute_Name"), col("inComingRule"), col("ID").alias("Primary_key_val"),
                    col("ErrVal"), col("ErrCd"), col("Action"), col("ErrMsg"),
-                   col("timeStamp").alias("Run_Timestamp")).write.save(path='test.csv', header=True,format='csv', mode='append', sep=',')
+                   col("timeStamp").alias("Run_Timestamp")).write.save(path=path, header=True,format='csv', mode='append', sep=',')
 
            # err.show()
 

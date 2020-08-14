@@ -5,19 +5,22 @@ from pyspark.sql.functions import monotonically_increasing_id
 from pyspark.sql.types import IntegerType
 from RuleValidation import CheckRule
 import threading
+from ThreadJobRun import threadExe
 
+import time
+from random import random
 
 
 def executeValidation(i,mattr,mdf,dataCp):
     if (mattr[i][1].find('|') > 0):
         split_metadata_rule_val = mattr[i][1].split('|')
         attribute = mattr[i][0]
-        CheckRule.RuleCheck.Multi_rule_validate(split_metadata_rule_val, attribute, mdf, dataCp)
+        CheckRule.RuleCheck.Multi_rule_validate(split_metadata_rule_val, attribute, mdf, dataCp,i)
 
     else:
         metadata_rule_val = mattr[i][1]
         attribute = mattr[i][0]
-        CheckRule.RuleCheck.Single_rule_validate(metadata_rule_val, attribute, mdf, dataCp)
+        CheckRule.RuleCheck.Single_rule_validate(metadata_rule_val, attribute, mdf, dataCp,i)
 
 
 def execute(spark,datafile,table_metadata,rule):
@@ -26,10 +29,6 @@ def execute(spark,datafile,table_metadata,rule):
     rule=spark.read.option("Header", "true").csv(rule)
 
     dataCp=data.withColumn("ID", monotonically_increasing_id() +1)
-    #dataCp=dataCp.repartition('ID')
-    data_cnt=data.count()
-    cnt=tableMetadata.count()
-
     metadataDf = tableMetadata \
         .select(tableMetadata.Rules_Applicable,
                 tableMetadata.Attribute_Name,
@@ -44,9 +43,16 @@ def execute(spark,datafile,table_metadata,rule):
     mdf=metadataDf.filter(col("Attribute_Name").isin(cols))
     mattr=mdf.select(col("Attribute_Name"),col("Rules_Applicable")).rdd.map(lambda l: list(l)).collect()
     mcnt=mdf.count()
+    threads = []
+    try:
+        for i in range(mcnt):
+            t = threading.Thread(target=executeValidation, args=(i, mattr, mdf, dataCp))
+            threads.append(t)
+            t.start()
 
-    for i in range(mcnt):
-        t = threading.Thread(target=executeValidation, args=(i,mattr,mdf,dataCp))
-        t.start()
+        for thread in threads:
+            thread.join()
 
-    return True
+    except(KeyboardInterrupt):
+        print('Keyboard - Interrupted')
+        sys.exit()
