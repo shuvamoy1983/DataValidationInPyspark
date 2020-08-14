@@ -15,11 +15,13 @@ def executeValidation(i,mattr,mdf,dataCp):
     if (mattr[i][1].find('|') > 0):
         split_metadata_rule_val = mattr[i][1].split('|')
         attribute = mattr[i][0]
+        mdf=mdf.where(col("Attribute_Name")== attribute)
         CheckRule.RuleCheck.Multi_rule_validate(split_metadata_rule_val, attribute, mdf, dataCp,i)
 
     else:
         metadata_rule_val = mattr[i][1]
         attribute = mattr[i][0]
+        mdf = mdf.where(col("Attribute_Name") == attribute)
         CheckRule.RuleCheck.Single_rule_validate(metadata_rule_val, attribute, mdf, dataCp,i)
 
 

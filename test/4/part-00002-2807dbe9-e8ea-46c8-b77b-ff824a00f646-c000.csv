@@ -1,0 +1,10 @@
+RunID,Data_Source_Name,Application_Name,Table_Name,Attribute_Name,inComingRule,Primary_key_val,ErrVal,ErrCd,Action,ErrMsg,Run_Timestamp
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,352,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,200,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,357,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,133,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,374,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,240,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,62,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,40,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18
+local-1597408445474,MS1,AIT1,AIT_Table_1,AppDescription,DQ6,52,null,ER6,warning,Acloumn has null Value,2020-08-14 18:04:18

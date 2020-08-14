@@ -13,6 +13,8 @@ if __name__ == '__main__':
     status=execute(spark,datafile,table_metadata,rule)
     df = spark.read.format("csv").option("header", "true").load("test/*")
     df.orderBy(col("Primary_key_val").cast(IntegerType()), ascending=True)\
-        .repartition(1).write.save(path='final4.csv',header=True,format='csv',sep=',')
+        .repartition(1)\
+        .write\
+        .save(path='final4.csv',header=True,format='csv',sep=',',mode='overwrite')
 
 

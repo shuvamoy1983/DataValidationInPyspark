@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7ea554f-36b8-40d0-9157-84df7a6220fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ThreadJobRun/threadExe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainJob.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuleValidation/AllRuleValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/RuleValidation/AllRuleValidation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RuleValidation/CheckRule.py" beforeDir="false" afterPath="$PROJECT_DIR$/RuleValidation/CheckRule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RunJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/RunJob.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final3.csv/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final3.csv/.part-00000-dec88220-2168-46c9-9d26-233c7f67992e-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final3.csv/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final3.csv/part-00000-dec88220-2168-46c9-9d26-233c7f67992e-c000.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +124,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
