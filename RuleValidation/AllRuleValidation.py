@@ -32,7 +32,8 @@ class AttributeValidate:
                         col("Table_Name"),col("Attribute_Name"),col("inComingRule"),col("ID").alias("Primary_key_val"),
                         col("ErrVal"),col("ErrCd"),col("Action"),col("ErrMsg"),col("timeStamp").alias("Run_Timestamp"),
                         col("Priority")) \
-                 .write.save(path=path, header=True,format='csv', mode='append', sep=',')
+                 .write.option("mode","append").parquet(path)
+               # save(path=path, header=True,format='csv', mode='append', sep=',')
         else:
             action = 'warning'
             ErrCd = 'ER6'
@@ -44,7 +45,8 @@ class AttributeValidate:
             rslt.select(col("RunID"), col("Data_Source_Name"), col("Application_Name"),
                    col("Table_Name"), col("Attribute_Name"), col("inComingRule"), col("ID").alias("Primary_key_val"),
                    col("ErrVal"), col("ErrCd"), col("Action"), col("ErrMsg"),
-                   col("timeStamp").alias("Run_Timestamp")).write.save(path=path, header=True,format='csv', mode='append', sep=',')
+                   col("timeStamp").alias("Run_Timestamp"),col("Priority")).write.option("mode","append").parquet(path)
+                #save(path=path, header=True,format='csv', mode='append', sep=',')
 
            # err.show()
 

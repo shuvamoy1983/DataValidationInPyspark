@@ -3,13 +3,100 @@
   <component name="ChangeListManager">
     <list default="true" id="a7ea554f-36b8-40d0-9157-84df7a6220fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainJob.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuleValidation/AllRuleValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/RuleValidation/AllRuleValidation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RunJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/RunJob.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final3.csv/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final3.csv/.part-00000-dec88220-2168-46c9-9d26-233c7f67992e-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final3.csv/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final3.csv/part-00000-dec88220-2168-46c9-9d26-233c7f67992e-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final4.csv/.part-00000-a80cf6a5-0442-4ea7-9b53-ac264089af19-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final4.csv/part-00000-a80cf6a5-0442-4ea7-9b53-ac264089af19-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/.part-00000-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/.part-00001-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/.part-00002-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/.part-00003-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/.part-00004-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/part-00000-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/part-00001-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/part-00002-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/part-00003-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/0/part-00004-3fc664c8-9f71-4e70-8a0b-21396fd36444-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/.part-00000-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/.part-00001-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/.part-00002-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/.part-00003-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/.part-00004-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/part-00000-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/part-00001-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/part-00002-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/part-00003-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1/part-00004-ffbcd605-039d-4a9f-bd47-79d3c3e92196-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/.part-00000-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/.part-00001-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/.part-00002-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/.part-00003-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/.part-00004-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/part-00000-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/part-00001-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/part-00002-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/part-00003-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2/part-00004-6e30c452-64fb-455e-9b82-ee7d2f886e7b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/.part-00000-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/.part-00001-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/.part-00002-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/.part-00003-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/.part-00004-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/part-00000-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/part-00001-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/part-00002-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/part-00003-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/3/part-00004-8b29f597-0181-4ae8-b87c-6222f0f418e5-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/.part-00000-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/.part-00001-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/.part-00002-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/.part-00003-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/.part-00004-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/part-00000-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/part-00001-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/part-00002-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/part-00003-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/4/part-00004-2807dbe9-e8ea-46c8-b77b-ff824a00f646-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/.part-00000-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/.part-00001-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/.part-00002-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/.part-00003-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/.part-00004-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/part-00000-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/part-00001-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/part-00002-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/part-00003-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/5/part-00004-0b090ef7-9026-454a-8d09-5994ff59efc9-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/.part-00000-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/.part-00001-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/.part-00002-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/.part-00003-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/.part-00004-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/part-00000-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/part-00001-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/part-00002-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/part-00003-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/6/part-00004-7e7c9e26-c090-49fb-a527-2f11ab71ee6a-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/.part-00000-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/.part-00001-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/.part-00002-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/.part-00003-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/.part-00004-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/part-00000-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/part-00001-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/part-00002-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/part-00003-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/7/part-00004-2b2ce9e4-5ede-45e7-91af-e8030257a63b-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/.part-00000-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/.part-00001-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/.part-00002-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/.part-00003-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/.part-00004-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/part-00000-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/part-00001-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/part-00002-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/part-00003-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/8/part-00004-43d359bc-eb67-490d-a5e2-e8606f15b86f-c000.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
