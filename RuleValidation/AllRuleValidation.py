@@ -16,8 +16,14 @@ class AttributeValidate:
 
     def chkNull(attribute, data, metadaDF, inComingRule,n):
         path='test/'+str(n)
-        #metadata = metadaDF.where(col("Attribute_Name") == attribute)
-        dp = data.where(col(attribute).isNull()).select(col(attribute), col("ID"))
+        validpath = 'valid/' + str(n)
+
+       #  validRec= data.where(col(attribute).isNotNull())
+       # colname=attribute+ '_bkp'
+
+        #validval=validRec.withColumn(colname, col(attribute)).drop(col(attribute))
+        #valid=validval.select(col(colname),col("ID"))
+        dp = data.where(col(attribute).isNull()).select(col(attribute),col("ID"))
         validation = dp.crossJoin(metadaDF)
         cnt = validation.where(validation.Table_Primary_Key.isNotNull()).count()
         if cnt > 0:
@@ -46,7 +52,8 @@ class AttributeValidate:
                    col("Table_Name"), col("Attribute_Name"), col("inComingRule"), col("ID").alias("Primary_key_val"),
                    col("ErrVal"), col("ErrCd"), col("Action"), col("ErrMsg"),
                    col("timeStamp").alias("Run_Timestamp"),col("Priority")).write.option("mode","append").parquet(path)
-                #save(path=path, header=True,format='csv', mode='append', sep=',')
+                #save(path=path, header=True,format='csv', mode='', sep=',')
 
+        #valid.write.option("mode", "append").parquet(validpath)
            # err.show()
 

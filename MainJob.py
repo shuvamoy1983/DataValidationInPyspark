@@ -24,13 +24,13 @@ def executeValidation(i,mattr,mdf,dataCp):
         mdf = mdf.where(col("Attribute_Name") == attribute)
         CheckRule.RuleCheck.Single_rule_validate(metadata_rule_val, attribute, mdf, dataCp,i)
 
+def createUniqueIdentifier(df):
+    UniqueKey = df.withColumn("ID", monotonically_increasing_id() + 1)
+    return UniqueKey
 
-def execute(spark,datafile,table_metadata,rule):
-    data=spark.read.option("Header", "true").csv(datafile)
-    tableMetadata=spark.read.option("Header", "true").csv(table_metadata)
-    rule=spark.read.option("Header", "true").csv(rule)
+def execute(data,tableMetadata,rule):
 
-    dataCp=data.withColumn("ID", monotonically_increasing_id() +1)
+    dataCp=createUniqueIdentifier(data)
     metadataDf = tableMetadata \
         .select(tableMetadata.Rules_Applicable,
                 tableMetadata.Attribute_Name,
@@ -47,7 +47,7 @@ def execute(spark,datafile,table_metadata,rule):
     mcnt=mdf.count()
     threads = []
     try:
-        for i in range(mcnt):
+        for i in range(3):
             t = threading.Thread(target=executeValidation, args=(i, mattr, mdf, dataCp))
             threads.append(t)
             t.start()
