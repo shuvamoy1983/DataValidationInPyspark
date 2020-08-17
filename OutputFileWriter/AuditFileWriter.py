@@ -38,8 +38,8 @@ class AuditJob:
                                audit.primary_key_val1).alias('primary_key_val'),
                            audit.Rejected_attributes.cast("string"))
 
-        adtWrite= adt.join(selectColsDF, adt["primary_key_val"] == selectColsDF["primary_key_val"], how='inner') \
-        .select("RunId","table_name",adt["primary_key_val"],"Rejected_attributes","pass_attribute","Warning_attributes")
+        adtWrite= adt.join(selectColsDF, adt["primary_key_val"] == selectColsDF["ID"], how='inner') \
+        .select("RunId","table_name",adt["primary_key_val"],"Rejected_attributes",selectColsDF["Pass_attribute"].cast("string"),"Warning_attributes")
 
         adtWrite.printSchema()
 

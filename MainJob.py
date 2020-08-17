@@ -28,9 +28,7 @@ def createUniqueIdentifier(df):
     UniqueKey = df.withColumn("ID", monotonically_increasing_id() + 1)
     return UniqueKey
 
-def execute(data,tableMetadata,rule):
-
-    dataCp=createUniqueIdentifier(data)
+def execute(dataCp,tableMetadata,rule,cols):
     metadataDf = tableMetadata \
         .select(tableMetadata.Rules_Applicable,
                 tableMetadata.Attribute_Name,
@@ -41,13 +39,13 @@ def execute(data,tableMetadata,rule):
                 tableMetadata.Priority
                 ).orderBy(tableMetadata.Priority,  ascending=True)
     #metadataDf.show()
-    cols=data.columns
+
     mdf=metadataDf.filter(col("Attribute_Name").isin(cols))
     mattr=mdf.select(col("Attribute_Name"),col("Rules_Applicable")).rdd.map(lambda l: list(l)).collect()
     mcnt=mdf.count()
     threads = []
     try:
-        for i in range(3):
+        for i in range(mcnt):
             t = threading.Thread(target=executeValidation, args=(i, mattr, mdf, dataCp))
             threads.append(t)
             t.start()

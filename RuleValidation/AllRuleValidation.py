@@ -23,6 +23,7 @@ class AttributeValidate:
 
         #validval=validRec.withColumn(colname, col(attribute)).drop(col(attribute))
         #valid=validval.select(col(colname),col("ID"))
+
         dp = data.where(col(attribute).isNull()).select(col(attribute),col("ID"))
         validation = dp.crossJoin(metadaDF)
         cnt = validation.where(validation.Table_Primary_Key.isNotNull()).count()

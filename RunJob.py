@@ -24,10 +24,12 @@ if __name__ == '__main__':
     tableMetadata = spark.read.option("Header", "true").csv(table_metadata)
     rule = spark.read.option("Header", "true").csv(rule)
 
-    #status=execute(datafile,table_metadata,rule)
-    #RejectFileWriter.RejectFileWriter.RejectItems(spark)
-    selColDf=DataFrameUtils.findNonRejectedCols(spark,data,tableMetadata)
-    AuditFileWriter.AuditJob.auditWriter(spark,selColDf)
+    cols = data.columns
+    data=createUniqueIdentifier(data)
+    status=execute(data,tableMetadata,rule,cols)
+    RejectFileWriter.RejectFileWriter.RejectItems(spark)
+    passRec=DataFrameUtils.newlogic(spark,data,tableMetadata)
+    AuditFileWriter.AuditJob.auditWriter(spark,passRec)
 
 
 #valid = spark.read.parquet("valid/0/","valid/1/")
