@@ -32,13 +32,13 @@ def execute(dataCp,tableMetadata,rule,cols):
     metadataDf = tableMetadata \
         .select(tableMetadata.Rules_Applicable,
                 tableMetadata.Attribute_Name,
-                tableMetadata.Table_Primary_Key,
+                tableMetadata.Action,
                 tableMetadata.Data_Source_Name,
                 tableMetadata.Application_Name,
                 tableMetadata.Table_Name,
                 tableMetadata.Priority
                 ).orderBy(tableMetadata.Priority,  ascending=True)
-    #metadataDf.show()
+
 
     mdf=metadataDf.filter(col("Attribute_Name").isin(cols))
     mattr=mdf.select(col("Attribute_Name"),col("Rules_Applicable")).rdd.map(lambda l: list(l)).collect()

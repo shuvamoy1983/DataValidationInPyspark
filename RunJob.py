@@ -26,10 +26,10 @@ if __name__ == '__main__':
 
     cols = data.columns
     data=createUniqueIdentifier(data)
-    status=execute(data,tableMetadata,rule,cols)
+    execute(data,tableMetadata,rule,cols)
     RejectFileWriter.RejectFileWriter.RejectItems(spark)
     passRec=DataFrameUtils.newlogic(spark,data,tableMetadata)
-    AuditFileWriter.AuditJob.auditWriter(spark,passRec)
+    AuditFileWriter.AuditJob.auditWriter(spark,passRec,data)
 
 
 #valid = spark.read.parquet("valid/0/","valid/1/")

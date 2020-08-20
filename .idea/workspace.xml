@@ -5,47 +5,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainJob.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OutputFileWriter/AuditFileWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/OutputFileWriter/AuditFileWriter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OutputFileWriter/RejectFileWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/OutputFileWriter/RejectFileWriter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuleValidation/AllRuleValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/RuleValidation/AllRuleValidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuleValidation/ErrorFileMessage.py" beforeDir="false" afterPath="$PROJECT_DIR$/RuleValidation/ErrorFileMessage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RunJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/RunJob.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/DataFrameUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/DataFrameUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final4.csv/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final4.csv/.part-00000-1a1e2c2d-48fe-4fe2-b828-1826184fb1b7-c000.csv.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final4.csv/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final4.csv/part-00000-1a1e2c2d-48fe-4fe2-b828-1826184fb1b7-c000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/.part-00000-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/.part-00002-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/.part-00003-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/.part-00004-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/part-00000-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/part-00002-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/part-00003-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/0/part-00004-442e8ade-63a3-45c5-8f58-a807d099fd1d-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/.part-00000-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/.part-00001-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/.part-00002-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/.part-00003-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/.part-00004-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/part-00000-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/part-00001-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/part-00002-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/part-00003-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1/part-00004-69f3c6f9-6c63-4c98-a1c1-53a03b95e74b-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/.part-00000-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/.part-00001-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/.part-00002-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/.part-00003-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/.part-00004-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/part-00000-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/part-00001-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/part-00002-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/part-00003-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2/part-00004-5a0e0050-a0dc-464e-b512-965ad5281268-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/0/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/0/.part-00000-249aafbf-2283-418e-964d-7cf3b390dd2d-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/0/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/0/part-00000-249aafbf-2283-418e-964d-7cf3b390dd2d-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/1/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/1/.part-00000-7c33644f-10cd-4e56-972d-f17430356f53-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/1/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/1/part-00000-7c33644f-10cd-4e56-972d-f17430356f53-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/2/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/2/.part-00000-35fe07cf-05e4-4ac1-b6d2-a3e44cec39b9-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/2/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid/2/part-00000-35fe07cf-05e4-4ac1-b6d2-a3e44cec39b9-c000.snappy.parquet" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

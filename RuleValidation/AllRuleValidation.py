@@ -1,6 +1,6 @@
 from pyspark.sql.functions import col
 from pyspark.sql import functions as f
-import  numpy as np
+from pyspark.sql.functions import trim
 from pyspark.sql import Row
 from session import ConnctSession
 import time
@@ -18,21 +18,16 @@ class AttributeValidate:
         path='test/'+str(n)
         validpath = 'valid/' + str(n)
 
-       #  validRec= data.where(col(attribute).isNotNull())
-       # colname=attribute+ '_bkp'
-
-        #validval=validRec.withColumn(colname, col(attribute)).drop(col(attribute))
-        #valid=validval.select(col(colname),col("ID"))
-
         dp = data.where(col(attribute).isNull()).select(col(attribute),col("ID"))
         validation = dp.crossJoin(metadaDF)
-        cnt = validation.where(validation.Table_Primary_Key.isNotNull()).count()
+
+        cnt=validation.where(trim(validation.Action)=='Reject').where(validation[attribute].isNull()).count()
         if cnt > 0:
-            action = 'Reject'
             ErrCd = 'ER6'
-            ErrMsg = attribute[0] + 'cloumn has null Value'
+            ErrMsg = attribute + ' cloumn has null Value'
             ErrVal = 'null'
-            err = ErrorFileMessage.ErrorDetection.errorMessege(ErrVal, ErrCd, ErrMsg,action,inComingRule)
+
+            err = ErrorFileMessage.ErrorDetection.errorMessege(ErrVal, ErrCd, ErrMsg,inComingRule)
             rslt=validation.crossJoin(err).repartition(5)
 
             rslt.select(col("RunID"),col("Data_Source_Name"),col("Application_Name"),
@@ -40,21 +35,22 @@ class AttributeValidate:
                         col("ErrVal"),col("ErrCd"),col("Action"),col("ErrMsg"),col("timeStamp").alias("Run_Timestamp"),
                         col("Priority")) \
                  .write.option("mode","append").parquet(path)
-               # save(path=path, header=True,format='csv', mode='append', sep=',')
-        else:
-            action = 'warning'
+                #.save(path=path, header=True,format='csv', mode='append', sep=',')
+
+        Warncnt = validation.where(trim(validation.Action) == 'Warning').where(validation[attribute].isNull()).count()
+
+        if Warncnt > 0:
+            #action = 'warning'
             ErrCd = 'ER6'
-            ErrMsg = attribute[0] + 'cloumn has null Value'
+            ErrMsg = attribute[0] + ' cloumn has null Value'
             ErrVal = 'null'
-            err = ErrorFileMessage.ErrorDetection.errorMessege(ErrVal, ErrCd, ErrMsg,action,inComingRule)
+            print(attribute + ' cloumn has null Value')
+            err = ErrorFileMessage.ErrorDetection.errorMessege(ErrVal, ErrCd, ErrMsg,inComingRule)
             rslt = validation.crossJoin(err).repartition(5)
 
             rslt.select(col("RunID"), col("Data_Source_Name"), col("Application_Name"),
                    col("Table_Name"), col("Attribute_Name"), col("inComingRule"), col("ID").alias("Primary_key_val"),
                    col("ErrVal"), col("ErrCd"), col("Action"), col("ErrMsg"),
                    col("timeStamp").alias("Run_Timestamp"),col("Priority")).write.option("mode","append").parquet(path)
-                #save(path=path, header=True,format='csv', mode='', sep=',')
 
-        #valid.write.option("mode", "append").parquet(validpath)
-           # err.show()
 

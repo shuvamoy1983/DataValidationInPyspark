@@ -12,4 +12,4 @@ class RejectFileWriter:
          col("Run_Timestamp"))\
          .repartition(1)\
          .write\
-         .save(path='final4.csv',header=True,format='csv',sep=',',mode='overwrite')
+         .save(path='RejectFile.csv',header=True,format='csv',sep=',',mode='overwrite')
